@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calcule seu IMC</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Calcule seu IMC</h1>
+    <form action="/" id="formulario" method="get">
+      <label for="peso">Peso</label>
+      <input type="text" id="peso" name="peso" placeholder="70">
+      <label for="altura">Altura</label>
+      <input type="text" id="altura" name="altura" placeholder="1.75">
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="resultado"></div>
+    <div class="section-tabela">
+    <h1 class="titulo-tabela">Tabela IMC</h1>
+    <div id="tabela" class="tabela">
+      
+      <div class="tabela-valores">
+        <h3>IMC</h3>
+          <p id="nvl1" class="col" >Menos do que 18,5</p>
+          <p id="nvl2" class="col nvl2">Entre 18,5 e 24,9</p>
+          <p id="nvl3" class="col nvl3">Entre 25 e 29,9</p>
+          <p id="nvl4" class="col nvl4">Entre 30 e 34,9</p>
+          <p id="nvl5" class="col nvl5">Entre 35 e 39,9</p>
+          <p id="nvl6" class="col nvl6">Mais do que 40</p>
+      </div>
+      <div class="tabela-valores">
+        <h3>Resultado</h3>
+        <p id="nvl1R" class="col">Abaixo do peso</p>
+        <p id="nvl2R" class="col nvl2">Peso normal</p>
+        <p id="nvl3R" class="col nvl3">Sobrepeso</p>
+        <p id="nvl4R" class="col nvl4">Obesidade grau 1</p>
+        <p id="nvl5R" class="col nvl5">Obesidade grau 2</p>
+        <p id="nvl6R" class="col nvl6">Obesidade grau 3</p>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
